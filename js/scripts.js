@@ -89,11 +89,8 @@ $(document).ready(function() {
 
   });
 
-    $("#btnRefresh").click(function() {
-      // $("#returnMessage").fadeOut();
-      // location.reload();
-  
-      event.preventDefault()
+    $("#btnRefresh").click(function() {  
+      event.preventDefault();
       $("#returnMessage").fadeOut();
       location.reload();
     });

@@ -11,20 +11,20 @@
 </head>
 <body style="background-image: url('img/Background.jpg'); background-size: 100%;">
   <div class="container">
-    <div class="jumbotron" style="background-image: url('img/robot.jpg'); background-size: 100%;" text-center shadow-lg mt-2>
-      <h1>"Play is the *Beep!*-ing Work of *Boop!*-ing Children"</h1>
+    <div class="jumbotron" style="background-image: url('img/jumbo.jpg'); background-size: stretch;" text-center shadow-lg mt-2>
+      <h1>"Play is the <span class="blinking">*Beep!*</span>-ing Work of <span class="blinking">*Boop!*</span>-ing Children"</h1>
     </div>
     <div class="box">  
       <form id="enterNumber"style="background-image: url('img/banner.jpg'); background-size: 100%;" >
         <div class="form-group">
-          <label for="number"><h2>Enter the First Number that Comes to Mind</h2></label>
+          <label for="number"><h2><span class="blinking2">Enter the First Number that Comes to Mind</span></h2></label>
           <input id="number" class="form-control" type="text">
         </div>
         <button type="submit" class="btn"><p>Tell Me Something!</p></button>
       </form>
     </div>
     <div id="returnMessage" style="background-image: url('img/Background.jpg'); background-size: 100%;" >
-      <p id="result"></p>
+      <p id="result"></p><br>
       <img src="img/robotroger.jpg" alt="Robot Roger" id="roger"><br>
       <button id="btnRefresh"><p>Let's Play Again!</p></button>
     </div>
