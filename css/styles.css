@@ -32,7 +32,7 @@
 
 .jumbotron {
   text-align: center;
-  border: 4px inset rgb(51, 53, 54);
+  border: 2px inset rgb(51, 53, 54);
   border-radius: 25px;
   margin: 10px;
   padding: 10px;
@@ -42,7 +42,7 @@
 form#enterNumber {
   text-align: center;
   color:black;
-  border: 3px inset rgb(51, 53, 54);
+  border: 2px inset rgb(51, 53, 54);
   border-radius: 25px;
   margin: 4px;
   padding: 4px;
