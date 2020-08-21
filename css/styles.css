@@ -30,11 +30,11 @@ form#enterNumber {
   padding: 4px;
 }
 
-#returnMessage {
+/* #returnMessage {
   display: none;
   background-color: black;
   text-align: center;
-}
+} */
 
 img {
   display: none;
