@@ -20,7 +20,7 @@
   display: none;
 }
 
-form#number {
+form#enterNumber {
   background-color: skyblue;
   text-align: center;
   color:black;
@@ -30,7 +30,8 @@ form#number {
   padding: 4px;
 }
 
-#results {
+#message {
+  display: none;
   background-color: black;
   text-align: center;
 }
