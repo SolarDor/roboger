@@ -2,7 +2,7 @@
 
 #### _Webpage that takes input, runs through arrays/loops, and outputs messages given specific parameter, 21 August 2020_
 
-#### By _**Cameron Will** <cellardoorsolar@aol.com_
+#### By _**Cameron Will** <cellardoorsolar@aol.com>_
 
 ## Description
 
