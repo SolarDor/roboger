@@ -78,10 +78,17 @@ function robot (number) {
 
 // User Interface
 
-$(document).ready(function(){
+$(document).ready(function() {
   $("#enterNumber").submit(function(event){
     event.preventDefault();
     const numberInput = parseInt($("#number").val());
-    $("#message").append(robot(numberInput)+ "  ");
+    $("#returnMessage").append(robot(numberInput)+ "  ");
+  });
+
+    $("#btnRefresh").click(function() {
+      $("#returnMessage").fadeOut();
+      location.reload();
+  
+      event.preventDefault()
   });
 });

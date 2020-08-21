@@ -30,19 +30,27 @@ form#enterNumber {
   padding: 4px;
 }
 
-#message {
+#returnMessage {
   display: none;
   background-color: black;
   text-align: center;
 }
 
 img {
+  display: none;
   float: center;
   width: 450px;
   height: auto;
 }
 
 h1 {
+  font-family: courier;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+p {
   font-family: courier;
   text-align: center;
   font-weight: bold;
