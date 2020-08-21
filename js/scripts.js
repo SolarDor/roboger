@@ -59,7 +59,7 @@ function containsOne (number) {
 function robot (number) {
   let result = [];
   if (isNaN(number)) { 
-    alert("Please only enter a (*Beep!*) number.");
+    alert("Please only enter a (*Beep!*)-ing number.");
     return;
   } else if (containsThree(number)) {
     return "Won't you be my neighbor?";
