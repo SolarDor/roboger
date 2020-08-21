@@ -54,4 +54,34 @@ function containsOne (number) {
   };
   return false;
 };
+
+
+function robot (number) {
+  let result = [];
+  if (isNaN(number)){ 
+    alert("Please only enter number.");
+    return;
+  } else if (containsThree(number)) {
+    return "Won't you be my neighbor?";
+  } else if (containsTwo(number)) {
+    return "Boop!";
+  } else if (containsOne(number)) {
+    return "Beep!";
+  } else {
+    for (i=0; i<=number; i++){
+      result.push(i);
+    };
+    stringResult = result.join(", "); 
+    return stringResult;
+  };
+};
+
 // User Interface
+
+$(document).ready(function(){
+  $("#enterNumber").submit(function(event){
+    event.preventDefault();
+    const numberInput = parseInt($("#number").val());
+    $("#message").append(robot(numberInput)+ "  ");
+  });
+});
