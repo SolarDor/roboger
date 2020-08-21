@@ -19,14 +19,14 @@
   display: none;
 }
 
-.blinking{
+.blink {
   animation:blinkingText 2.0s infinite;
 }
 @keyframes blinkingText{
   0%{     color: whitesmoke;    }
-  49%{    color: rgb(170, 18, 18); }
-  60%{    color: transparent; }
-  85%{    color: transparent;  }
+  25%{    color: rgb(170, 18, 18); }
+  50%{    color: transparent; }
+  75%{    color: rgb(170, 18, 18);  }
   100%{   color: whitesmoke;    }
 }
 
@@ -71,7 +71,7 @@ h2 {
   font-family: courier;
   text-align: center;
   font-weight: bold;
-  color: whitesmoke;
+  color: rgb(219, 208, 57);
 }
 
 p {
