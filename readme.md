@@ -1,6 +1,6 @@
 # _Mr. Roboger's Neighborhood_
 
-#### _Webpage that takes input, runs through arrays/loops, and outputs messages given specific parameter, 21 August 2020_
+#### _Webpage that takes input, runs through arrays/loops, and outputs messages given specific parameters on numbers 1, 2, and 3 with exceptions for 13, 21,and 32 with priority given on a scale of importance. 21 August 2020_
 
 #### By _**Cameron Will** <cellardoorsolar@aol.com>_
 
@@ -8,7 +8,7 @@
 
 _This is a simple webpage project to practice using arrays and loops. Users enter a number into the form, which is then transformed into string of messages on the screen._
 
-## Specifications for Pig Latin
+## Specifications for Roboger's Neighborhood
 1. Behavior: The number 32 should be replaced with "Won't you be my neighbor?"
 Input: "32"
 Output: "Won't you be my neighbor?"
