@@ -83,7 +83,7 @@ $(document).ready(function() {
     event.preventDefault();
     const numberInput = parseInt($("#number").val());
     $("#result").append(robot(numberInput)+ "  ");
-    
+    $("#returnMessage").show
   });
 
     // $("#btnRefresh").click(function() {
