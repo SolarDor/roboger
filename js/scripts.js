@@ -25,4 +25,33 @@
 
 // Business Interface
 
+function containsThree (number) {
+  let stringNumber = number.toString();
+  for (num of stringNumber){
+    if (num === "3"){
+      return true;
+    };
+  };
+  return false;
+};
+
+function containsTwo (number) {
+  let stringNumber = number.toString();
+  for (num of stringNumber){
+    if (num === "2"){
+      return true;
+    };
+  };
+  return false;
+};
+
+function containsOne (number) {
+  let stringNumber = number.toString();
+  for (num of stringNumber){
+    if (num === "1"){
+      return true;
+    };
+  };
+  return false;
+};
 // User Interface
