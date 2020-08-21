@@ -59,7 +59,7 @@ function containsOne (number) {
 function robot (number) {
   let result = [];
   if (isNaN(number)) { 
-    alert("Please only enter number.");
+    alert("Please only enter a (*Beep!*) number.");
     return;
   } else if (containsThree(number)) {
     return "Won't you be my neighbor?";
@@ -83,15 +83,17 @@ $(document).ready(function() {
     event.preventDefault();
     const numberInput = parseInt($("#number").val());
     $("#result").append(robot(numberInput)+ "  ");
-    $("#returnMessage").show();
-    $("#btnRefresh").show();
+    $("#returnMessage").fadeIn();
+    $("#btnRefresh").fadeIn();
 
   });
 
     $("#btnRefresh").click(function() {
-      $("#returnMessage").fadeOut();
-      location.reload();
+      // $("#returnMessage").fadeOut();
+      // location.reload();
   
       event.preventDefault()
+      $("#returnMessage").fadeOut();
+      location.reload();
     });
 });
