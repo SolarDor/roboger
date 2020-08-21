@@ -19,11 +19,18 @@
   display: none;
 }
 
+.jumbotron {
+  text-align: center;
+  border-radius: 25px;
+  margin: 4px;
+  padding: 4px;
+
+}
+
 form#enterNumber {
-  background-color: skyblue;
   text-align: center;
   color:black;
-  border: 5px solid rgb(27, 37, 32);
+  border: 3px groove rgb(51, 53, 54);
   border-radius: 25px;
   margin: 4px;
   padding: 4px;
@@ -46,6 +53,13 @@ h1 {
   text-align: center;
   font-weight: bold;
   color: black;
+}
+
+h2 {
+  font-family: courier;
+  text-align: center;
+  font-weight: bold;
+  color: whitesmoke;
 }
 
 p {
