@@ -83,13 +83,15 @@ $(document).ready(function() {
     event.preventDefault();
     const numberInput = parseInt($("#number").val());
     $("#result").append(robot(numberInput)+ "  ");
-    $("#returnMessage").show
+    $("#returnMessage").show();
+    $("#btnRefresh").show();
+
   });
 
-    // $("#btnRefresh").click(function() {
-    //   $("#result").fadeOut();
-    //   location.reload();
+    $("#btnRefresh").click(function() {
+      $("#returnMessage").fadeOut();
+      location.reload();
   
-    //   event.preventDefault()
-    // });
+      event.preventDefault()
+    });
 });
