@@ -56,44 +56,63 @@ function containsOne (number) {
 };
 
 
-function robot (number) {
-  let result = [];
+function robot(number) {
+  let numberArray = [];
   if (isNaN(number)) { 
     alert("Please only enter a (*Beep!*)-ing number.");
-    location.reload();
-    return;
-  } else if (containsThree(number)) {
-    return "Won't you be my neighbor?";
-  } else if (containsTwo(number)) {
-    return "Boop!";
-  } else if (containsOne(number)) {
-    return "Beep!";
-  } else {
-    for (i=0; i<=number; i++){
-      console.log(number)
-      console.log(i)
-      console.log("===")
-      if (i ) {
-        result.push(number);
-      } else {  
-        result.push(robot(i));
-      }
-    };
-    stringResult = result.join(", "); 
-    return stringResult;
+    return "Enter a *BEEP*-ing Number!";
   };
+  for (let i=0; i<=number; i++) {  
+    if (containsThree(number)) {
+    numberArray.push(" Won't you be my neighbor?");
+  } else if (containsTwo(number)) {
+    numberArray.push(" Boop!");
+  } else if (containsOne(number)) {
+    numberArray.push(" Beep!");
+  } else {
+    numberArray.push(" "+i);
+    };
+  };
+  return numberArray;
+};
+
+function robotInverse(number) {
+  let numberArray = [];
+  if (isNaN(number)) { 
+    alert("Please enter a number, and use digits rather than letters.");
+    return "Enter a number!";
+  };
+  for (let i=number; i>=0; i--){
+    if (containsThree(i)) {
+      numberArray.push(" Won't you be my neighbor?");
+    } else if (containsTwo(i)) {
+      numberArray.push(" Boop!");
+    } else if (containsOne(i)) {
+      numberArray.push(" Beep!");
+    } else {
+      numberArray.push(" "+i);
+    };
+  };
+  return numberArray;
 };
 
 // User Interface
 
 $(document).ready(function() {
+  let results = [];
   $("#enterNumber").submit(function(event){
     event.preventDefault();
     const numberInput = parseInt($("#number").val());
-    $("#result").append(robot(numberInput)+ "  ");
+    const orderInput = parseInt($("#numOrder").val());
+    if (orderInput === 1){
+      results.push(" " + robot(numberInput) + " ");
+      $("#result").text(results);
+    } else {
+      results.push(" " + robotInverse(numberInput) + " ");
+      $("#result").text(results);
+    };
     $("#returnMessage").fadeIn();
     $("#btnRefresh").fadeIn();
-
   });
 
     $("#btnRefresh").click(function() {  
