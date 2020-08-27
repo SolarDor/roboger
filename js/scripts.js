@@ -70,7 +70,14 @@ function robot (number) {
     return "Beep!";
   } else {
     for (i=0; i<=number; i++){
-      result.push(i);
+      console.log(number)
+      console.log(i)
+      console.log("===")
+      if (i ) {
+        result.push(number);
+      } else {  
+        result.push(robot(i));
+      }
     };
     stringResult = result.join(", "); 
     return stringResult;
